@@ -30,6 +30,9 @@ const handleUserInput = function (key) {
     connection.write("Move: left");
     console.log("left");
   }
+  if (key === " ") {
+    connection.write("Say: hehe...'space' out");
+  }
 
 };
 
