@@ -15,18 +15,7 @@ const connect = function () {
     setTimeout(() => {
       conn.write("Name: SNK");
     }, 1000);
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 1500);
-    setTimeout(() => {
-      conn.write("Move: left");
-    }, 1550);
-    setTimeout(() => {
-      conn.write("Move: down");
-    }, 1600);
-    setTimeout(() => {
-      conn.write("Move: left");
-    }, 1650);
+
   });
 
   // TEST CODE
