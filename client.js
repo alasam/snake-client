@@ -12,12 +12,42 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log ("Your snek has connected");
+    setTimeout(() => {
+      conn.write("Name: SNK");
+    }, 1000);
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 1500);
+    setTimeout(() => {
+      conn.write("Move: left");
+    }, 1550);
+    setTimeout(() => {
+      conn.write("Move: down");
+    }, 1600);
+    setTimeout(() => {
+      conn.write("Move: left");
+    }, 1650);
   });
 
-  conn.on("connect", () => {
-    console.log ("Your snek has connected");
-    conn.write ("Name: SNK");
-  });
+  // TEST CODE
+  // conn.on("connect", () => {
+  //   console.log ("Your snek has connected");
+  //   setTimeout(() => {
+  //     conn.write("Name: SNK");
+  //   }, 1000);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 1500);
+  //   setTimeout(() => {
+  //     conn.write("Move: left");
+  //   }, 1550);
+  //   setTimeout(() => {
+  //     conn.write("Move: down");
+  //   }, 1600);
+  //   setTimeout(() => {
+  //     conn.write("Move: left");
+  //   }, 1650);
+  // });
 
 
 
